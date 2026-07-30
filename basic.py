@@ -82,9 +82,9 @@
 #     if (n % i==0) :
 #         print(i)
 
-line = input("enter line :")
-rev = line[-1:0]
-print(rev)
+# line = input("enter line :")
+# rev = line[-1:0]
+# print(rev)
 # physics=float(input("enter your marks here: "))
 # maths= float(input("enter your marks here: "))
 # chemistry=float(input("enter your marks here: "))
@@ -173,7 +173,7 @@ print(rev)
 # else:
 #     print("error")
 
-n=5
+# n=5
 # for i in range (0,5):
 #     print("* " * i)
 
