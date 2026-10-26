@@ -77,8 +77,54 @@ def remove_matches():
             a.remove(ch)
     print(len(a)+len(b))
 
+def course():
+    first = input().split()
+    second = input().split()
+    count=0
+    for i in first:
+        if i in second:
+            count=count+1
 
-            
+    print(count)
+def block():
+    web = input().split()
+    blocked= web[-1]
+    count =0
+    for i in web:
+        if i!=blocked:
+            count = count+1
+    print(count)
+
+def difference():
+    no=list(map(int,input().split()))
+    no.sort(reverse=True)
+    print(no)
+    min = no[0]
+    max=no[-1]
+    print(min-max)
+from datetime import datetime
+def hunt():
+    date=input().split()
+    date1 = datetime.strptime(date[0], "%Y-%M-%D")
+    date2 = datetime.strptime(date[1],"%Y-%M-%D")
+    print(abs((date2-date1).days),end=" ")
+import calendar
+def calc():
+    year,month=input().split()
+    count =0
+    for day in calendar.monthcalendar(year,month):
+        if day[calendar.SUNDAY] !=0:
+            count +=1
+    print(count,end="")
+
+
+
+
+
+
+# hunt()  
+# difference()
+# course()            
 # remove_matches()
 # record()
 # sum_total()
